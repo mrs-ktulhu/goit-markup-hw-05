@@ -130,6 +130,9 @@ header{
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+
+    position: relative;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .site-nav .link:hover ,
 .site-nav .link:focus  {
@@ -146,6 +149,7 @@ header{
 .contact{
     display: flex;
     margin-left: auto;
+    
 }
 .contact .contact-item + .contact-item{
     margin-left: 50px;
@@ -159,11 +163,14 @@ header{
     padding-top: 32px;
     display: flex;
     align-items: center;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .smartphone,
 .envelope {
     margin-right: 10px;
     fill: #757575;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 .contact-link:hover,
 .contact-link:focus {
@@ -172,6 +179,7 @@ header{
 .contact-link:hover .envelope,
 .contact-link:focus .envelope {
     fill: var(--accent-color);
+    
 }
 .contact-link:hover .smartphone,
 .contact-link:focus .smartphone {
@@ -366,6 +374,9 @@ header{
     justify-content: center;
     border-radius: 50%;
     background-color: #FFF;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-list .social-link:hover{
     background-color: var(--accent-color);
@@ -428,13 +439,16 @@ header{
     width: 170px;
     height: 92px;
     margin-right: 30px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 .client-link {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 100%;    
     height: 100%;
+    
 }
 
 .clients-item:last-child {
@@ -444,14 +458,16 @@ header{
 .clients-item:hover {
     border: 1px solid var(--accent-color);
 }
+.clients-icon {
+    fill: #afb1b8;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .clients-item:hover .clients-icon {
     fill: var(--accent-color)   ;
 }
 
-.clients-icon {
-    fill: #afb1b8;
-}
+
 /* Футер адреса + номер/ел.пошта */
 .footer {
     background-color: #2f303a;
@@ -500,6 +516,7 @@ header{
     border-radius: 50%;
     color: #ffffff;
     background-color: #ffffff10;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-social-link:hover,
 .footer-social-link:focus {
@@ -524,9 +541,11 @@ header{
     line-height: 1.7;
     font-style: normal;
     margin-top: 20px;
+    
 }
 .address-street {
     color: #fff;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .address-street:hover,
 .address-street:focus{
@@ -534,6 +553,7 @@ header{
 }
 .address-contact{
     color: rgba(255, 255, 255, 0.6);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .address-contact:focus,
 .address-contact:hover{
@@ -568,6 +588,7 @@ header{
     border: none;
     border-radius: 4px;
     padding: 6px 25px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .nav-button:hover,
